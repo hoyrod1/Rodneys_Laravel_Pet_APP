@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CatsController;
+use App\Http\Controllers\DogsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () { return view('index'); });
+Route::get('/cats', [CatsController::class, 'index'])->name('cats.index');
+Route::get('/dogs', [DogsController::class, 'index'])->name('dogs.index');

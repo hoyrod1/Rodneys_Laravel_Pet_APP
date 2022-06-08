@@ -33,10 +33,10 @@
                     <a class="nav-link" href="/"><b>Home</b></a>
                 </li>
                 <li class="nav-item" style="color: hotpink;">
-                    <a class="nav-link" href="cats.html"><b>Cats</b></a>
+                    <a class="nav-link" href="{{route('cats.index')}}"><b>Cats</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="dogs.html"><b>Dogs</b></a>
+                    <a class="nav-link" href="{{route('dogs.index')}}"><b>Dogs</b></a>
                 </li>
 
             </ul>
